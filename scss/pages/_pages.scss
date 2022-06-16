@@ -1,0 +1,48 @@
+a {
+  color: $lighter-dark;
+  text-decoration: none;
+  &.btnStyle1 {
+    @include button(
+      $default-margin-top: rem(200),
+      $default-margin-right: rem(1000),
+      $default-margin-left: rem(0),
+      $transformX: rem(-30),
+      $transformY: rem(-30),
+      $span-background: $blue,
+      $hover-background: $light-blue
+    );
+  }
+  &.btnStyle2 {
+    @include button(
+      $default-margin-top: rem(600),
+      $default-margin-right: rem(0),
+      $default-margin-left: rem(1000),
+      $transformX: rem(-30),
+      $transformY: rem(-30),
+      $span-background: $pink,
+      $hover-background: $light-pink
+    );
+  }
+  &.btnStyle3 {
+    @include button(
+      $default-margin-top: rem(600),
+      $default-margin-right: rem(1000),
+      $default-margin-left: rem(0),
+      $transformX: rem(-30),
+      $transformY: rem(-30),
+      $span-background: $purple,
+      $hover-background: $light-purple
+    );
+  }
+  &.btnStyle4 {
+    @include button(
+      $default-margin-top: rem(200),
+      $default-margin-right: rem(0),
+      $default-margin-left: rem(1000),
+      $transformX: rem(-30),
+      $transformY: rem(-30),
+      $span-background: $green,
+      $hover-background: $light-green
+    );
+  }
+}

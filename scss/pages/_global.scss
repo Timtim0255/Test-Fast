@@ -1,0 +1,14 @@
+body {
+  background-color: $skin;
+  color: $lighter-dark;
+  font-family: "Montserrat", "serif";
+  text-align: center;
+  h1 {
+    color: $darker-skin;
+    margin-top: rem(30);
+    text-decoration: none;
+    span {
+      color: $skin;
+    }
+  }
+}

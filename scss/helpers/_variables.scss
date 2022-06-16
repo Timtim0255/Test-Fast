@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+$skin: #faebd7;
+$darker-skin: #ff947f;
+$blue: #00bfff;
+$light-blue: #3bceff;
+$green: #00cc00;
+$light-green: #00f300;
+$purple: #6666ff;
+$light-purple: #8d8dff;
+$pink: #cc33ff;
+$light-pink: #d65aff;
+$dark: #000;
+$lighter-dark: #333;
+$span-background: $blue;
+$hover-background: $green;
+
+$default-margin-right: rem(1000);
+$default-margin-left: rem(0);
+$default-transition: transform 0.15s ease-out, color 0.15s ease-out,
+  background-color 0.15s ease-out, border-color 0.15s ease-out;
+$default-display: inline-block;
+
+// Size
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}

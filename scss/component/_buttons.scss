@@ -1,0 +1,37 @@
+@mixin button(
+  $default-margin-top: rem(200),
+  $default-margin-right: rem(1000),
+  $default-margin-left: rem(0),
+  $transformX: rem(30),
+  $transformY: rem(30),
+  $span-background: $blue,
+  $hover-background: $light-blue
+) {
+  display: inline-block;
+  background: $dark;
+  border-radius: rem(16);
+  text-decoration: none;
+  margin-top: $default-margin-top; //200 ou 600
+  margin-right: $default-margin-right; //0 ou 1000
+  margin-left: $default-margin-left; //0 ou 1000
+
+  span {
+    display: inline-block;
+    background: $span-background; //$blue ou $green ou $purple ou $pink
+    border: rem(8) solid $lighter-dark;
+    border-radius: rem(16);
+    padding: rem(40);
+    font-size: rem(80);
+    font-weight: 900;
+    cursor: pointer;
+    transition: $default-transition;
+  }
+  &:hover {
+    span {
+      transform: translate($transformX, $transformY);
+      color: $dark;
+      background: $hover-background;
+      border-color: $dark;
+    }
+  }
+}
